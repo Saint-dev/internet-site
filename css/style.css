@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Inter';
+}
+body{
+	background-color: #fff;
+}
+.container{
+	max-width: 1400px;
+	padding: 3%;
+	margin: 0 auto;
+}
+nav{
+	display: flex;
+	align-items: center;
+	padding-left: 830px;
+	justify-content: space-between ;
+}
+nav ul{ 
+	position: fixed;
+	list-style: none;
+}
+nav ul li{
+
+	display: inline-block;
+}
+nav ul li a{
+	padding: 10px 10px;
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+}
+.menu{
+	position: relative;
+	padding-bottom: 8px;
+	cursor: pointer;
+}
+
+.menu::after{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	content: "";
+	width: 0%;
+	height: 2px;
+	background-color: #4c3481;
+	transition: width 0.4s ease-out;
+}
+nav ul li a:hover{
+	color: #4c3481;
+}
+.menu:hover.menu::after{
+
+	width: 100%;
+}
+h1{
+	color:#332E30 ;
+	position: absolute;
+	font-size: 70px;
+	padding-left: 1%;
+	padding-top: 15%;
+}
+.text-promo p {
+	font-weight: 700;
+	color:#332E30 ;
+	position: absolute;
+	font-size: 25px;
+	padding-left: 1%;
+	padding-top: 22%;
+}
+
+span{
+	color: #4c3481;
+}
+.logo{
+	
+	position: absolute;
+	top: 4%;
+}
+.planos-img{
+}
+.planos-img img{
+	position: absolute;
+	top: 18%;
+	left: 48%;
+	max-width: 675px;
+}
+a{
+	font-weight: 800;
+}
+button{
+	border-radius: 10px;
+	width: 100px;
+	height: 23px;
+	background-color: #fff;
+}
+.sobre{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+.sobre h1{
+	white-space: break-spaces;
+	font-size: 20px;
+}
